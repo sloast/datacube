@@ -9,3 +9,7 @@ script = ExtResource("1_a7k4u")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.882948, -0.269278, 0.384569, 0, 0.819152, 0.573576, -0.469472, -0.506438, 0.723268, 2.08438, 2.28353, 3.41682)
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="VisualCube" type="VisualCube" parent="."]
