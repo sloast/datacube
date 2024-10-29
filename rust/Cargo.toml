@@ -4,11 +4,26 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["cdylib", "lib"]
 
 [dependencies]
 cute = "0.3.0"
 godot = { git = "https://github.com/godot-rust/gdext", branch = "master" }
+num-traits = "0.2.19"
 rand = "0.8.5"
 strum = "0.26.3"
 strum_macros = "0.26.4"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "bench_cubestate"
+harness = false
+
+[lints.rust]
+dead_code = "allow"
+
+[lints.clippy]
+needless_return = "allow"
+missing_transmute_annotations = "allow"
